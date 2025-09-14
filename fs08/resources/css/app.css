@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/* Components */
+@layer components {
+    /* Unified card appearance used across the site */
+    .card {
+        @apply rounded-2xl border border-white/10 bg-gray-900/40 backdrop-blur-sm transition-colors;
+        background-image: linear-gradient(180deg, rgba(99,102,241,0.06), rgba(168,85,247,0.06)); /* indigo→fuchsia tint */
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.06);
+    }
+
+    /* Slightly stronger card (feature blocks) */
+    .card-strong {
+        @apply rounded-3xl border border-white/10 bg-gray-900/50 backdrop-blur-sm;
+        background-image: linear-gradient(180deg, rgba(99,102,241,0.09), rgba(168,85,247,0.09));
+        box-shadow: 0 10px 30px rgba(17,24,39,0.35), inset 0 1px 0 rgba(255,255,255,0.06);
+    }
+}
