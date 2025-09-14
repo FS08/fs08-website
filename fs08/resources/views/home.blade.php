@@ -16,7 +16,7 @@
             Build. Learn. Secure.
           </h1>
           <p class="mt-4 text-gray-300 leading-7">
-            I’m Fábio Santos (fs08) — an IT student focused on cybersecurity and programming. I love shipping small, useful projects and sharing the journey.
+            I’m <span class="text-accent font-semibold">Fábio Santos</span> <span class="token">FS08</span> — an IT student focused on cybersecurity and programming. I love shipping small, useful projects and sharing the journey.
           </p>
           <div class="mt-6 grid grid-cols-2 gap-4 text-sm">
             <div class="card p-4">
@@ -48,14 +48,16 @@
           </div>
         </div>
         <div class="relative">
-          <a href="{{ route('projects') }}" class="block card-strong overflow-hidden shadow-xl">
+          <a href="{{ route('projects') }}" class="group block card-strong overflow-hidden shadow-xl">
             <div class="relative">
-              <div class="relative aspect-[16/10] bg-gradient-to-br from-indigo-600/20 to-fuchsia-600/20 flex items-center justify-center rounded-3xl">
-                <div class="flex flex-col items-center text-indigo-100">
+              <div class="relative aspect-[16/10] bg-gradient-to-br from-indigo-600/20 to-fuchsia-600/20 flex items-center justify-center rounded-3xl overflow-hidden">
+                <div class="flex flex-col items-center text-indigo-100 transition-opacity duration-300 group-hover:opacity-0">
                   <img src="{{ asset('cth_logo.png') }}" alt="CyberToolsHub" class="h-32 w-32 object-contain rounded-2xl">
                   <span class="mt-3 text-xl font-semibold">CyberToolsHub</span>
                   <span class="mt-1 text-sm text-indigo-100/80">Secure phishing email scanner</span>
                 </div>
+                <img src="{{ asset('cth_preview.png') }}" alt="CyberToolsHub preview" loading="lazy"
+                     class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100 pointer-events-none">
               </div>
             </div>
           </a>

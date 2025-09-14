@@ -17,9 +17,9 @@
             class="w-56 h-56 rounded-md object-cover ring-2 ring-gray-800 shadow-xl" />
         </div>
         <div class="lg:col-span-2">
-          <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">My Journey</h1>
+          <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">My <span class="text-accent">Journey</span></h1>
           <p class="mt-6 text-gray-300 leading-8 text-justify">
-            I’m Fábio Santos, an IT student passionate about cybersecurity and programming. I’m 25, originally from Portugal,
+            I’m <span class="text-accent font-semibold">Fábio Santos</span>, an IT student passionate about cybersecurity and programming. I’m 25, originally from Portugal,
             and I’ve been living in Switzerland since 2017. I hold a Swiss CFC as a car mechanic and I’m now in the final (4th)
             year of my second Swiss CFC in IT.
           </p>
@@ -36,7 +36,7 @@
             <div class="card p-5">
               <div class="text-white">Now</div>
               <ul class="mt-2 text-gray-400 space-y-2 list-disc list-inside">
-                <li>Building with Laravel + Tailwind</li>
+                <li>Building with <span class="token">Laravel</span> + <span class="token">Tailwind</span></li>
                 <li>Studying security fundamentals and best practices</li>
                 <li>Automating small tasks to learn faster</li>
               </ul>
